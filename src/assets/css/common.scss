@@ -1,0 +1,45 @@
+.banner-wrapper,
+.order-wrapper,
+.currency-wrapper,
+.dealer-wrapper,
+.feedback-wrapper,
+.seo-wrapper {
+  .header {
+    position: relative;
+    .add-item {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+  }
+  .layout-title-box {
+    justify-content: flex-start;
+    .filter-condition {
+      margin-right: 30px;
+    }
+    .el-select {
+      width: 150px; 
+      .el-input {
+        width: 100%;
+      }
+    }
+    .el-input {
+      width: 200px;
+    }
+    .el-date-editor {
+      width: 250px;
+    }
+    .label {
+      margin-right: 10px;
+    }
+    .el-range-separator {
+      box-sizing: content-box;
+    }
+  }
+  .button-container {
+    .el-button {
+      height: 38px;
+      font-size: 14px;
+    }
+  }
+}

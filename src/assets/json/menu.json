@@ -1,0 +1,324 @@
+[
+  {
+    "label": "账号权限管理",
+    "icon": "el-icon-s-tools",
+    "path": "/auth-manage",
+    "key": "/api/manager/list"
+  },
+  {
+    "label": "分类管理",
+    "icon": "el-icon-menu",
+    "path": "/category-manage",
+    "key": "/api/vip-mall/manager/class/getClass",
+    "children": [
+      {
+        "label": "获取所有分类列表",
+        "key": "/api/vip-mall/manager/class/getClass"
+      },
+      {
+        "label": "根据类型查询分类列表",
+        "key": "/api/vip-mall/manager/class/listClass"
+      },
+      {
+        "label": "新增或修改分类",
+        "key": "/api/vip-mall/manager/class/putClass"
+      },
+      {
+        "label": "删除分类",
+        "key": "/api/mall/manager/goods/class/delete"
+      },
+      {
+        "label": "修改分类状态",
+        "key": "/api/vip-mall/manager/class/updateClassStatus"
+      }
+    ]
+  },
+  {
+    "label": "标签管理",
+    "icon": "el-icon-collection-tag",
+    "path": "/tag-manage",
+    "key": "/api/vip-mall/manager/tag/listTag",
+    "children": [
+      {
+        "label": "获取商品标签列表",
+        "key": "/api/vip-mall/manager/tag/listTag"
+      },
+      {
+        "label": "根据商品分类查询标签列表",
+        "key": "/api/vip-mall/manager/tag/groupTags"
+      },
+      {
+        "label": "新增或修改商品标签",
+        "key": "/api/vip-mall/manager/tag/putTag"
+      },
+      {
+        "label": "修改标签状态",
+        "key": "/api/vip-mall/manager/tag/updateTagStatus"
+      }
+    ]
+  },
+  {
+    "label": "商品管理",
+    "icon": "el-icon-s-shop",
+    "path": "/goods-manage",
+    "key": "/api/vip-mall/manager/goods/listGoods",
+    "children": [
+      {
+        "label": "查看商品列表",
+        "key": "/api/vip-mall/manager/goods/listGoods"
+      },
+      {
+        "label": "发布/编辑商品",
+        "key": "/api/vip-mall/manager/goods/putGoods"
+      },
+      {
+        "label": "修改推荐商品排序",
+        "key": "/api/mall/manager/goods/updateRecommendRank"
+      },
+      {
+        "label": "推荐/取消推荐商品",
+        "key": "/api/vip-mall/manager/goods/goodsRecommend"
+      },
+      {
+        "label": "查询推荐商品列表",
+        "key": "/api/vip-mall/manager/goods/listRecommendGoods"
+      },
+      {
+        "label": "查看商品详情",
+        "key": "/api/vip-mall/manager/goods/getGoods"
+      },
+      {
+        "label": "修改规格状态",
+        "key": "/api/vip-mall/manager/goods/updateSkuStatus"
+      },
+      {
+        "label": "修改热度",
+        "key": "/api/vip-mall/manager/goods/updateGoodsHot"
+      },
+      {
+        "label": "查询关联推荐列表",
+        "key": "/api/vip-mall/manager/goods/listRelationGoods"
+      },
+      {
+        "label": "修改关联推荐商品",
+        "key": "/api/vip-mall/manager/goods/goodsUpdateRelation"
+      },
+      {
+        "label": "修改商品状态",
+        "key": "/api/vip-mall/manager/goods/updateGoodsStatus"
+      },
+      {
+        "label": "修改商品排序",
+        "key": "/api/vip-mall/manager/goods/updateGoodsRank"
+      },
+      {
+        "label": "查看商品规格列表",
+        "key": "/api/vip-mall/manager/goods/listSku"
+      },
+      {
+        "label": "修改规格库存/价格",
+        "key": "/api/vip-mall/manager/goods/updateGoodsSkus"
+      },
+      {
+        "label": "修改子语言状态",
+        "key": "/api/vip-mall/manager/goods/updateGoodsI18nStatus"
+      },
+      {
+        "label": "新增/编辑商品子语言",
+        "key": "/api/vip-mall/manager/goods/putI18nGoods"
+      },
+      {
+        "label": "查询商品子语言列表",
+        "key": "/api/vip-mall/manager/goods/listI18nGoods"
+      }
+    ]
+  },
+  {
+    "label": "SEO管理",
+    "icon": "el-icon-monitor",
+    "path": "/seo-manage",
+    "key": "/api/vip-mall/manager/seo/listSeo",
+    "children": [
+      {
+        "label": "查看SEO页面列表",
+        "key": "/api/vip-mall/manager/seo/listSeo"
+      },
+      {
+        "label": "新增/编辑SEO",
+        "key": "/api/vip-mall/manager/seo/putSeo"
+      },
+      {
+        "label": "删除SEO配置",
+        "key": "/api/vip-mall/manager/seo/deleteSeo"
+      },
+      {
+        "label": "查看SEO详情",
+        "key": "/api/vip-mall/manager/seo/getSeo"
+      }
+    ]
+  },
+  {
+    "label": "意见反馈管理",
+    "icon": "el-icon-question",
+    "path": "/feedback-manage",
+    "key": "/api/vip-mall/manager/feedback/listFeedback",
+    "children": [
+      {
+        "label": "查询意见反馈列表",
+        "key": "/api/vip-mall/manager/feedback/listFeedback"
+      },
+      {
+        "label": "修改意见反馈",
+        "key": "/api/vip-mall/manager/feedback/updateFeedback"
+      }
+    ]
+  },
+  {
+    "label": "评论管理",
+    "icon": "el-icon-chat-dot-square",
+    "path": "/comment-manage",
+    "key": "/api/vip-mall/manager/comment/listComment",
+    "children": [
+      {
+        "label": "查询评论列表",
+        "key": "/api/vip-mall/manager/comment/listComment"
+      },
+      {
+        "label": "评论排序",
+        "key": "/api/vip-mall/manager/comment/setCommentRank"
+      },
+      {
+        "label": "修改评论状态",
+        "key": "/api/vip-mall/manager/comment/updateCommentStatus"
+      }
+    ]
+  },
+  {
+    "label": "广告管理",
+    "icon": "el-icon-video-camera-solid",
+    "path": "/banner-manage",
+    "key": "/api/vip-mall/manager/advance/listAdvance",
+    "children": [
+      {
+        "label": "查询广告列表",
+        "key": "/api/vip-mall/manager/advance/listAdvance"
+      },
+      {
+        "label": "新增/编辑广告",
+        "key": "/api/vip-mall/manager/advance/putAdvance"
+      },
+      {
+        "label": "修改广告状态",
+        "key": "/api/vip-mall/manager/advance/updateAdvanceStatus"
+      },
+      {
+        "label": "查询广告详情",
+        "key": "/api/vip-mall/manager/advance/getAdvance"
+      },
+      {
+        "label": "修改广告排序",
+        "key": "/api/vip-mall/manager/advance/updateAdvanceRank"
+      }
+    ]
+  },
+  {
+    "label": "订单管理",
+    "icon": "el-icon-s-order",
+    "path": "/order-manage",
+    "key": "/api/vip-mall/manager/order/listOrder",
+    "children": [
+      {
+        "label": "查询订单列表",
+        "key": "/api/vip-mall/manager/order/listOrder"
+      },
+      {
+        "label": "查看订单详情",
+        "key": "/api/vip-mall/manager/order/orderInfo"
+      },
+      {
+        "label": "修改订单状态",
+        "key": "/api/vip-mall/manager/order/payCompleted"
+      },
+      {
+        "label": "获取物流公司列表",
+        "key": "/api/vip-mall/manager/express/companyList"
+      },
+      {
+        "label": "订单修改价格",
+        "key": "/api/vip-mall/manager/order/modifyPrice"
+      },
+      {
+        "label": "编辑物流",
+        "key": "/api/vip-mall/manager/order/editExpress"
+      }
+    ]
+  },
+  {
+    "label": "货币兑换管理",
+    "icon": "el-icon-coin",
+    "path": "/currency-exchange",
+    "key": "/api/vip-mall/manager/currency/listCurrency",
+    "children": [
+      {
+        "label": "查询货币类型列表",
+        "key": "/api/vip-mall/manager/currency/CurrencyTypeList"
+      },
+      {
+        "label": "新增/编辑货币",
+        "key": "/api/vip-mall/manager/currency/putCurrency"
+      },
+      {
+        "label": "获取货币列表",
+        "key": "/api/vip-mall/manager/currency/listCurrency"
+      },
+      {
+        "label": "删除当前货币",
+        "key": "/api/vip-mall/manager/currency/updateCurrencyStatus"
+      }
+    ]
+  },
+  {
+    "label": "服务中心管理",
+    "icon": "el-icon-service",
+    "path": "/service-center",
+    "key": "/api/vip-mall/manager/faq/listFaq",
+    "children": [
+      {
+        "label": "查询服务列表",
+        "key": "/api/vip-mall/manager/faq/listFaq"
+      },
+      {
+        "label": "新增或修改服务信息",
+        "key": "/api/vip-mall/manager/faq/putFaq"
+      },
+      {
+        "label": "修改FAQ排序或状态",
+        "key": "/api/vip-mall/manager/faq/updatePartFaq"
+      }
+    ]
+  },
+  {
+    "label": "经销商管理",
+    "icon": "el-icon-fork-spoon",
+    "path": "/dealer-manage",
+    "key": "/api/vip-mall/manager/dealer/listDealer",
+    "children": [
+      {
+        "label": "查询经销商列表",
+        "key": "/api/vip-mall/manager/dealer/listDealer"
+      },
+      {
+        "label": "新增/修改经销商",
+        "key": "/api/vip-mall/manager/dealer/putDealer"
+      },
+      {
+        "label": "禁用/启用经销商",
+        "key": "/api/vip-mall/manager/user/forbidUser"
+      },
+      {
+        "label": "重置经销商账号密码",
+        "key": "/api/manager/accountResetPasswd"
+      }
+    ]
+  }
+]

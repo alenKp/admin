@@ -1,0 +1,139 @@
+.from-layout {
+  .from-layout-title {
+    display: flex;
+    justify-content: space-between;
+    color: $base-color;
+
+    >div {
+      font-weight: bold;
+    }
+  }
+
+  .box-card {
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    transition: all 0.3s ease 0s;
+    padding: 30px 55px;
+
+    .demo-form-inline {
+      .el-form-item {
+        margin-right: 40px;
+      }
+    }
+
+    .goodsParams {
+      .goodsParams-title {
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+        padding-left: 60px;
+        margin-bottom: 20px;
+      }
+
+      .goodsParams-content {
+        display: flex;
+      }
+    }
+  }
+
+  .from-operation {
+    display: flex;
+    justify-content: flex-end;
+
+    .el-button {
+      margin-left: 30px;
+    }
+  }
+  .el-form-item {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .el-form-item__label {
+      font-size: 14px;
+      color: #333333;
+      font-weight: bold;
+    }
+    .el-form-item__content {
+      .el-input {
+        .el-input__suffix {
+          color: $base-color;
+        }
+      }
+      .tip-text {//最多上传5张尺寸文字跟上传框对齐
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+  }
+  .el-card__header {
+    padding: 20px 30px;
+  }
+  .el-card__body {
+    padding: 0;
+  }
+}
+.goodsInfoView-box {
+  .el-dialog__headerbtn .el-dialog__close {
+    font-size: 22px;
+  }
+}
+.goodsParams {//参数名称flex布局
+  .goodsParams-content {
+    .el-form-item {
+      display: flex;
+      margin-right: 40px;
+    }
+  }
+}
+
+.app-wrapper {
+  .fix-form-nav {
+    position: fixed;
+    top: 50px;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: auto;
+    padding: 3px 20px;
+    z-index: 90;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    > .btn-list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      > .item {
+        padding: 0 20px;
+        color: #333333;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        line-height: 40px;
+        transition: all 0.3s ease 0s;
+        &.active {
+          background-color: $base-color;
+          color: #ffffff;
+        }
+        &:hover {
+          background-color: #cca558b3;
+          color: #ffffff;
+        }
+      }
+    }
+    > .form-option {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  &.hideSidebar {
+    .fix-form-nav {
+      width: calc(100% - 54px);
+      left: 54px;
+    }
+  }
+}
